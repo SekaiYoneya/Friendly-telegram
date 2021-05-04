@@ -1,6 +1,5 @@
 #clown... again :/ by @Sekai_Yoneya
 
-
 from pydub import AudioSegment, effects; from telethon import types; from .. import loader, utils; import math, requests, io; import numpy as np
 @loader.tds
 class AudioEditorMod(loader.Module):
