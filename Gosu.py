@@ -13,7 +13,7 @@ def register(cb):
 
 class GosuMod(loader.Module):
     """ты еблан да?"""
-    strings = {'name': 'Госу'}
+    strings = {'name': 'Gosu'}
 
     def init(self):
         self.name = self.strings['name']
