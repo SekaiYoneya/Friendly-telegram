@@ -1,4 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
+#clown... again :/ by @Sekai_Yoneya 
 
 from .. import loader, utils
 import requests
@@ -10,11 +10,9 @@ from textwrap import wrap
 
 
 def register(cb):
-	cb(ZapZabSoglMod())
+	cb(ZapomniZabudSoglMod())
 	
-class ZapZab
-
-SoglMod(loader.Module):
+class ZapomniZabudSoglMod(loader.Module):
 	"""Запомните;забудьте твари, согласен."""
 	strings = {'name': 'Зап, заб, согл'}
 	def __init__(self):
