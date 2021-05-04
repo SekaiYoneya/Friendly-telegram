@@ -54,7 +54,7 @@ class FrazesMod(loader.Module):
                 return
             await event.edit(response.text)
 
-    async def podcmd(self, event):
+    async def podkatcmd(self, event):
         """Подкат"""
         chat = '@yoneyabs_bot'
         async with event.client.conversation(chat) as conv:
@@ -67,7 +67,7 @@ class FrazesMod(loader.Module):
                 return
             await event.edit(response.text)
 
-    async def podkatcmd(self, event):
+    async def ayfcmd(self, event):
         """АУФ!!!"""
         chat = '@yoneyabs_bot'
         async with event.client.conversation(chat) as conv:
