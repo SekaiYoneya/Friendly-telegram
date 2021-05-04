@@ -54,13 +54,26 @@ class FrazesMod(loader.Module):
                 return
             await event.edit(response.text)
 
-    async def podkatcmd(self, event):
+    async def podcmd(self, event):
         """Подкат"""
         chat = '@yoneyabs_bot'
         async with event.client.conversation(chat) as conv:
             try:
                 response = conv.wait_event(events.NewMessage(incoming=True, from_users= 1705701465 ))
                 await event.client.send_message(chat, '/podkat')
+                response = await response
+            except YouBlockedUserError:
+                await event.edit('<code>Разблокируй @YoneyaBS_bot</code>')
+                return
+            await event.edit(response.text)
+
+    async def podkatcmd(self, event):
+        """АУФ!!!"""
+        chat = '@yoneyabs_bot'
+        async with event.client.conversation(chat) as conv:
+            try:
+                response = conv.wait_event(events.NewMessage(incoming=True, from_users= 1705701465 ))
+                await event.client.send_message(chat, '/ayf')
                 response = await response
             except YouBlockedUserError:
                 await event.edit('<code>Разблокируй @YoneyaBS_bot</code>')
