@@ -11,15 +11,15 @@ class DelTmMod(loader.Module):
     @loader.owner 
     async def deltmcmd(self, m): 
         ".deltm <секунд> <реплай>" 
-        reply = await m.get_reply_message() 
-        if not reply: 
+       reply = await m.get_reply_message() 
+       if not reply: 
             return await m.edit("reply to message...") 
-        a = re.compile(r"^\d+$") 
-        t = utils.get_args_raw(m) 
-        if a.match(t): 
+       a = re.compile(r"^\d+$") 
+       t = utils.get_args_raw(m) 
+       if a.match(t): 
             await m.delete() 
             await sleep(int(t)) 
             await reply.delete() 
-        else: 
+       else: 
             await m.edit("shit...") 
             return
