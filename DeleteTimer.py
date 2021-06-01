@@ -3,8 +3,7 @@
 from .. import loader, utils 
 import re 
 from asyncio import sleep 
- 
- 
+
 @loader.tds 
 class DelTmMod(loader.Module): 
     strings = {"name": "Delete timer"} 
