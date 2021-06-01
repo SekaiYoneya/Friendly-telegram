@@ -7,10 +7,10 @@ from asyncio import sleep
 @loader.tds 
 class DelTmMod(loader.Module): 
     strings = {"name": "Delete timer"} 
-        "Удалит сообщение через указанное время"
+        "Удалит сообщение через указанное время."
     @loader.owner 
     async def deltmcmd(self, m): 
-        ".deltm <секунд> <реплай>" 
+        ".deltm секунд реплай" 
        reply = await m.get_reply_message() 
        if not reply: 
             return await m.edit("reply to message...") 
