@@ -13,5 +13,5 @@ class PicPhotosMod(loader.Module):
 
  async def gowcmd(self, event):
   await event.edit('<b>Бог Войны!</b>')
-  reslt=await event.client.inline_query('pic',Yoneya(['Бог Войны','Кратос']))
+  reslt=await event.client.inline_query('pic',Yoneya(['Бог Войны','Кратос','Кратос убил Зевса']))
   await reslt[reslt.index(Yoneya(reslt))].click(event.to_id)
