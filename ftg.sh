@@ -10,4 +10,4 @@ cd bot2
 cd friendly-telegram
 screen -AmdS -r python -m friendly-telegram --no-web
 echo "@DeNTLy"
-clear
+
