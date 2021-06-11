@@ -45,6 +45,10 @@ class MyRepMod(loader.Module):
                         number += 1
                         self.db.set("MyRep", "my_repa", number)
                         await message.reply(f"<b>Ты повысил мою репутацию!\nНовое значение: {number}.</b>")
+                    if message.text == "+2":
+                        number += 2
+                        self.db.set("MyRep", "my_repa", number)
+                        await message.reply(f"<b>Ты повысил мою репутацию!\nНовое значение: {number}.</b>")
                     elif message.text == "-":
                         total = int(number) - 1
                         self.db.set("MyRep", "my_repa", total)
