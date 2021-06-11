@@ -35,7 +35,6 @@ class leomatchMod(loader.Module):
              if not user_msg:
                  return 
          chat = '@leomatchbot'
-         await event.edit('<b>[👎] Вам не понравился пользователь.</b>')
          async with event.client.conversation(chat) as conv:
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
@@ -60,7 +59,6 @@ class leomatchMod(loader.Module):
              if not user_msg:
                  return 
          chat = '@leomatchbot'
-         await event.edit('<b>[❤️] Вам понравился пользователь.</b>')
          async with event.client.conversation(chat) as conv:
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
@@ -85,7 +83,6 @@ class leomatchMod(loader.Module):
              if not user_msg:
                  return 
          chat = '@leomatchbot'
-         await event.edit('<b>[❌] В другой раз.</b>')
          async with event.client.conversation(chat) as conv:
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
@@ -110,7 +107,6 @@ class leomatchMod(loader.Module):
              if not user_msg:
                  return 
          chat = '@leomatchbot'
-         await event.edit('<b>[❌] В другой раз.</b>')
          async with event.client.conversation(chat) as conv:
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
@@ -135,7 +131,6 @@ class leomatchMod(loader.Module):
              if not user_msg:
                  return 
          chat = '@leomatchbot'
-         await event.edit('<b>[🚀] Смотрим анкеты.</b>')
          async with event.client.conversation(chat) as conv:
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
