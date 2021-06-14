@@ -9,7 +9,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 @loader.tds
 class WhoIsMod(loader.Module):
     """Получает информацию о пользователе."""
-    strings = {'name': 'WhoIs'}
+    strings = {'name': 'Whois'}
 
     async def whoiscmd(self, message):
         """Используй .whois <@ или реплай>; ничего"""
