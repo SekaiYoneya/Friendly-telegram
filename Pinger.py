@@ -1,4 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
+# @Sekai_Yoneya
 
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
