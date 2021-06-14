@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 class x0Mod(loader.Module):
 	"""Uploader"""
 	strings = {
-		"name": "0x0 Uploader"
+		"name": "x0 Uploader"
 	}
 
 	async def client_ready(self, client, db):
@@ -19,7 +19,7 @@ class x0Mod(loader.Module):
 	
 	
 	@loader.sudo
-	async def oxocmd(self, message):
+	async def x0cmd(self, message):
 		await message.edit("<b>Uploading...</b>")
 		reply = await message.get_reply_message()
 		if not reply:
