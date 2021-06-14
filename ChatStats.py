@@ -1,4 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
+# @Sekai_Yoneya
  
 from .. import loader 
 from telethon.tl.types import * 
