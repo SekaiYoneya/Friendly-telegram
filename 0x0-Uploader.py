@@ -1,4 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
+# @Sekai_Yoneya
 
 from .. import loader, utils  # pylint: disable=relative-beyond-top-level
 import logging
