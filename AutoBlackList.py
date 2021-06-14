@@ -1,4 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
+# @Sekai_Yoneya
 
 from .. import loader, utils 
 from telethon.tl.functions.contacts import BlockRequest 
@@ -16,13 +16,13 @@ class AutoBlackListMod(loader.Module):
         self.db = db 
      
     async def autoblcmd(self, message): 
-        """Включить/выключить режим AutoBlackList""" 
+        """Включить/выключить режим""" 
         args = utils.get_args_raw(message) 
         autobl = self.db.get("AutoBlackList", "status", False) 
         if args: 
             self.db.set("AutoBlackList", "status", True) 
             self.db.set("AutoBlackList", "message", str(args)) 
-            return await message.edit("<b>[AutoBlackList Mode]</b> Активирован!") 
+            return await message.edit("<b>[AutoBlackList]</b> Активирован!") 
      
         if autobl == False: 
             self.db.set("AutoBlackList", "status", True) 
@@ -34,7 +34,7 @@ class AutoBlackListMod(loader.Module):
  
     async def autoblstatuscmd(self, message): 
         """Проверить статус AutoBlackList""" 
-        await message.edit(f"<b>[AutoBlackList Mode - Status]</b>\n\n" 
+        await message.edit(f"<b>[AutoBlackList - Status]</b>\n\n" 
                            f"<b>Кидать в ЧС</b> - {self.db.get('AutoBlackList', 'status')}\n" 
                            f"<b>Удалять чаты</b> - {self.db.get('AutoBlackList', 'delchat')}") 
  
