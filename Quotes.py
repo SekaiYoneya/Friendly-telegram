@@ -1,4 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
+# @Sekai_Yoneya
 
 import hashlib
 import io
