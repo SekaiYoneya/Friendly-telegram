@@ -29,10 +29,10 @@ MODULE_PATH = "https://quotes.mishase.dev/f/module.py"
 
 
 @loader.tds
-class mQuotesMod(loader.Module):
-	"""Quotes a message using fro0zzy Quotes API"""
+class QuotesMod(loader.Module):
+	"""Quotes a message"""
 	strings = {
-		"name": "mQuotes",
+		"name": "Quotes",
 		"silent_processing_cfg_doc": ("Process quote "
 		                              "silently(mostly"
 		                              " w/o editing)"),
