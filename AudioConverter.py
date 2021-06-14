@@ -1,5 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
-# requires: pydub 
+# @Sekai_Yoneya
 
 from pydub import AudioSegment 
 from .. import loader, utils 
