@@ -1,4 +1,4 @@
-#clown... again :/ by @Sekai_Yoneya
+# @Sekai_Yoneya
 
 from .. import loader, utils
 import re
@@ -10,7 +10,7 @@ class SenderMod(loader.Module):
     @loader.owner
     async def sndcmd(self, m):
         """.snd <канал/чат/id> <reply>
-        Отпрпвить сообшение в чат/канал(без авторства)
+        Отправить сообщение в чат/канал(без авторства)
         """
         args = utils.get_args_raw(m)
         reply = await m.get_reply_message()
