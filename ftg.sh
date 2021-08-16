@@ -1,13 +1,13 @@
-echo "1. Юзер-бот Sekai_Yoneya - запуск 💸"
+echo "1. UserBot Sekai_Yoneya - запуск 💸"
 cd /home
 cd friendly-telegram
 screen -AmdS -r python3 -m friendly-telegram --no-web
 echo "Sekai_Yoneya"
 echo ""
-echo "2. Юзер-бот Mysterio King - запуск 🔥"
+echo "2. UserBot Takashi_Yoneya - запуск 🔥"
 cd ~
-cd /home/twobot
+cd /home/Takashi-Yoneya
 cd friendly-telegram
 screen -AmdS -r python3 -m friendly-telegram --no-web
-echo "Mysterio King"
+echo "Takashi_Yoneya"
 
