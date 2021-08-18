@@ -18,3 +18,7 @@ echo "5. UserBot | Ichigo_Yoneya > запуск"
 cd /home/Ichigo_Yoneya
 cd friendly-telegram
 screen -AmdS -r python3 -m friendly-telegram --no-web
+echo "6. UserBot | Ⲁⲭⲩⲉⲃⲱυύ ⲡⲉⲗьⲙⲉⲏь. > запуск"
+cd /home/Kollet_Yoneya
+cd friendly-telegram
+screen -AmdS -r python3 -m friendly-telegram --no-web
