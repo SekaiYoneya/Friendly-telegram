@@ -156,7 +156,25 @@ class AntiPMMod(loader.Module):
                 return
         await message.client(functions.contacts.DeleteContactsRequest(id=[user.id]))
         await utils.answer(message, self.strings["delcontact"].format(user.first_name))
-         
+
+    async def renamecmd(self, message): 
+        args = utils.get_args_raw(message) 
+        reply = await message.get_reply_message() 
+        if not args: 
+            return await message.edit("<b>Нету аргументов.</b>") 
+        if not reply: 
+            return await message.edit("<b>Где реплай?</b>") 
+        else: 
+            user = await message.client.get_entity(reply.sender_id) 
+        try: 
+            await message.client(functions.contacts.AddContactRequest(id=user.id,  
+                                                                      first_name=args, 
+                                                                      last_name=' ', 
+                                                                      phone='мобила', 
+                                                                      add_phone_privacy_exception=False)) 
+            await message.edit(f"<code>{user.id}</code> <b>переименован(-а) на</b> <code>{args}</code>") 
+        except: return await message.edit("<b>Что то пошло не так...</b>")
+
     async def watcher(self, message): 
         try: 
             user = await utils.get_user(message) 
